@@ -1,21 +1,26 @@
 {
   "manifest_version": 3,
-  "name": "helloworld",
+  "name": "Change Name",
   "version": "1.0",
-  "description": "It is my first chrome extension",
+  "description": "It is my second chrome extension",
   "icons": {
     "128": "icon128.png",
     "48": "icon48.png",
     "16": "icon16.png"
   },
-  "content_scripts": [
+
+  "content_scripts":[
     {
       "matches": ["<all_urls>"],
-      "js": ["popup.js"]
+      "js": [
+        "jquery.min.js",
+        "popup.js"
+      ]
     }
   ],
+
   "action": {
-    "default_icon": "icon16png",
+    "default_icon": "icon16.png",
     "default_popup": "popup.html"
   }
 }

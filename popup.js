@@ -1,11 +1,16 @@
 
-
 document.addEventListener('DOMContentLoaded',function () {
-   var link=document.getElementById('checkPage');
-   var inputVal=document.getElementById('name');
-   var txtShow=document.getElementById('great');
-   link.addEventListener('click',function(){
-       txtShow.innerText=inputVal.value;
-   });
+   var great=document.getElementById('great');
+   var myinput=document.getElementById('myinput');
+   var mybtn=document.getElementById('mybtn');
 
+   mybtn.addEventListener('click',function () {
+      great.innerText=myinput.value;
+   })
+});
+
+$(function () {
+   $('#myinput').on('keyup',function () {
+      $('#great').text($('#myinput').val());
+   });
 });
