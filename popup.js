@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded',function () {
+/*document.addEventListener('DOMContentLoaded',function () {
    var great=document.getElementById('great');
    var myinput=document.getElementById('myinput');
    var mybtn=document.getElementById('mybtn');
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded',function () {
    mybtn.addEventListener('click',function () {
       great.innerText=myinput.value;
    })
-});
+});*/
 
 $(function () {
    $('#myinput').on('keyup',function () {
