@@ -11,6 +11,6 @@
 
 $(function () {
    $('#myinput').on('keyup',function () {
-      $('#great').text($('#myinput').val());
+      $('#great').text($('#myinput').val()).css("color","gray");
    });
 });
